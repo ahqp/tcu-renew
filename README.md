@@ -50,8 +50,9 @@ heroku config:set LINE_USER_ID=""
 heroku config:set TCU_USER_ID=""
 heroku config:set TCU_PASSWORD=""
 ```
-heroku のタイムゾーンを日本に変更します。
-`heroku config:add TZ=Asia/Tokyo`
+heroku のタイムゾーンを日本に変更します。  
+`heroku config:add TZ=Asia/Tokyo`  
+
 <!--
 ここまできたら設置したheroku app を試しに実行してみましょう  
 `heroku run -a <app_name> python renew.py ` )
