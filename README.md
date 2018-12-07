@@ -50,7 +50,10 @@ heroku config:set LINE_USER_ID=""
 heroku config:set TCU_USER_ID=""
 heroku config:set TCU_PASSWORD=""
 ```
+[](
 ここまできたら設置したheroku app を試しに実行してみましょう  
+`heroku run -a tcu-renew python renew.py ` )
+
 実行がうまくいっていれば、定期実行の設定をしましょう  
 `heroku addons:add scheduler:standard`
 あとはコンソールからAdd new jobを選択して  
