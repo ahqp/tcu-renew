@@ -55,9 +55,9 @@ heroku config:set TCU_PASSWORD=""
 `heroku run -a python renew.py ` )
 -->
 実行がうまくいっていれば、定期実行の設定をしましょう  
-`heroku addons:add scheduler:standard`
+`heroku addons:add scheduler:standard`  
 あとはコンソールからAdd new jobを選択して  
-`python renew.py`
+`python renew.py`  
 を登録してください。  
 一日一回実行したいので、FrequencyはDailyに指定。  
 next due はUTCなので設定したい日本時間-9:00としなければいけません。  
