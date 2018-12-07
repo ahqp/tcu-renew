@@ -8,17 +8,17 @@ Herokuに設置して定期実行させる使い方を想定してますが、
 ## 必要のもの  
 - LINE アカウント  
 - heroku アカウント  
-どちらも無料で取得可能です。  
+ どちらも無料で取得可能です。  
 
 ## LINE  
-まず[LINE Developers](https://developers.line.biz/en/)のページへ行き、  
-プロバイダを選択、または新規作成します。  
+まず[LINE Developers](https://developers.line.biz/en/)のページへ行き、プロバイダを選択、または新規作成します。  
 続いて、新規チャンネルを作成します。  
 今回は一人のユーザにPushメッセージを送信できればいいので、Developer Trialプランを選択してください。  
 プロバイダ名、チャンネル名、アプリ名、アプリの説明などは自分で使うだけなので、自分がわかればなんでもいいです。  
-登録が完了したら、Botの設定画面から、メッセージ送受信設定の項目にあるアクセストークンと、その他の項目にあるYour user IDを確認します。  
+登録が完了したら、Botの設定画面から、メッセージ送受信設定の項目にあるアクセストークンと、  
+その他の項目にあるYour user IDを確認します。  
 アクセストークンは最初は何も表示されていないので、再発行ボタンを押してください。  
-それから、QRコードからBOTを友達追加しておいてください。  
+それから、QRコードを読み込んでBOTを友達追加しておいてください。  
 
 ## Herokuの準備をする前に  
 続いて、このリポジトリをクローンしてください。  
@@ -52,7 +52,7 @@ heroku config:set TCU_PASSWORD=""
 ```
 [](
 ここまできたら設置したheroku app を試しに実行してみましょう  
-`heroku run -a tcu-renew python renew.py ` )
+`heroku run -a python renew.py ` )
 
 実行がうまくいっていれば、定期実行の設定をしましょう  
 `heroku addons:add scheduler:standard`
