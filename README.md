@@ -7,7 +7,7 @@ Herokuに設置して定期実行させる使い方を想定してますが、
 
 ## 必要のもの  
 - LINE アカウント  
-- heroku アカウント  
+- Heroku アカウント  
  どちらも無料で取得可能です。  
 
 ## LINE  
@@ -53,12 +53,15 @@ heroku config:set TCU_PASSWORD=""
 <!--
 ここまできたら設置したheroku app を試しに実行してみましょう  
 `heroku run -a python renew.py ` )
+実行がうまくいっていれば、
 -->
-実行がうまくいっていれば、定期実行の設定をしましょう  
+定期実行のためのアドオンを追加します。 
 `heroku addons:add scheduler:standard`  
-あとはコンソールからAdd new jobを選択して  
+
+あとはHerokuコンソールからAdd new jobを選択して  
 `python renew.py`  
 を登録してください。  
+
 一日一回実行したいので、FrequencyはDailyに指定。  
 next due はUTCなので設定したい日本時間-9:00としなければいけません。  
 私の場合は午前1:00に実行したいので、16:00に設定しています。  
