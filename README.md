@@ -55,7 +55,7 @@ heroku config:set TCU_PASSWORD=""
 `heroku run -a python renew.py ` )
 実行がうまくいっていれば、
 -->
-定期実行のためのアドオンを追加します。 
+定期実行のためのアドオンを追加します。  
 `heroku addons:add scheduler:standard`  
 
 あとはHerokuコンソールからAdd new jobを選択して  
