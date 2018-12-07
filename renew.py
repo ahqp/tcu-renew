@@ -31,8 +31,8 @@ if __name__ == "__main__":
 
     options = webdriver.ChromeOptions()
     #options.binary_location = '/app/.apt/usr/bin/google-chrome'
-    #options.add_argument('--headless')
-    #options.add_argument('--disable-gpu')
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
     driver = webdriver.Chrome(options=options)
     time.sleep(5+(random.random()*5))
     #longin ユーザーネームとパスワードを保存
