@@ -50,10 +50,10 @@ heroku config:set LINE_USER_ID=""
 heroku config:set TCU_USER_ID=""
 heroku config:set TCU_PASSWORD=""
 ```
-[ ](
+<!--
 ここまできたら設置したheroku app を試しに実行してみましょう  
 `heroku run -a python renew.py ` )
-
+-->
 実行がうまくいっていれば、定期実行の設定をしましょう  
 `heroku addons:add scheduler:standard`
 あとはコンソールからAdd new jobを選択して  
@@ -63,6 +63,8 @@ heroku config:set TCU_PASSWORD=""
 next due はUTCなので設定したい日本時間-9:00としなければいけません。  
 私の場合は午前1:00に実行したいので、16:00に設定しています。  
 
+## Support Me  
+[IssueHunt](https://issuehunt.io/repos/160844308)  
 ## 大学図書館関係者各位へ  
 このスクリプトは、できるだけシステムに負荷をかけないように書いたつもりです。  
 もし、このスクリプトに対し、多くの利用者が不便を感じてしまうような対処をなされるくらいなら、事前にご相談ください。  
