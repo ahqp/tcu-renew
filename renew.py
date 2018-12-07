@@ -19,6 +19,7 @@ def line_push(line_user_id, messages):
     }
     jsonstr = json.dumps(data)
     r = requests.post(push_api_url, data=jsonstr, headers=headers)
+    return r
 
 if __name__ == "__main__":
     line_token = os.environ["LINE_TOKEN"]
