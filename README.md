@@ -50,7 +50,7 @@ heroku config:set LINE_USER_ID=""
 heroku config:set TCU_USER_ID=""
 heroku config:set TCU_PASSWORD=""
 ```
-[](
+[ ](
 ここまできたら設置したheroku app を試しに実行してみましょう  
 `heroku run -a python renew.py ` )
 
