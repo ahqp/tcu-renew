@@ -37,12 +37,16 @@ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-chromedriver.gi
 heroku buildpacks:set https://github.com/heroku/heroku-buildpack-google-chrome.git
 ```
 heroku appに tcu-renewのファイルを追加します。  
+<!--
 ```
 git add renew.py
 git add requirements.txt
 git commit -m "Initial Commit"
-git push heroku master
 ```
+-->  
+```
+git push heroku master
+```  
 LINEのアクセストークン、Your user ID、大学アカウントのIDとパスワードを環境変数を設定します。  
 ```
 heroku config:set LINE_TOKEN=""
